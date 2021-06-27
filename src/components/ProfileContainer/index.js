@@ -1,5 +1,6 @@
 import React from "react";
 import './styles.css';
+import logoGitHub from '../../assets/logoGitHub.png'
 
 const ProfileContainer = () => {
   return (
@@ -9,13 +10,16 @@ const ProfileContainer = () => {
       </div>
       <div className="profileContainer">
         <aside className="sideBar">
-          <img src="" alt="" className="userImage"/>
-          <h1 className="userName"></h1>
-          <h3 className="userNickName"></h3>
-          <p className="userDescription"></p>
-          <p className="userLocation"></p>
+          <img src={logoGitHub} alt="" className="userImage"/>
+          <h1 className="userName">Hugo Ferreira</h1>
+          <h3 className="userNickName">sdfsdfsd</h3>
+          <p className="userDescription">fdsfsdfsd</p>
+          <p className="userLocation">sdfsdfsdf</p>
         </aside>
-        <div></div>
+        <div className="reposContainer">
+          <p className="repoContainerTitle">Popular repositories</p>
+          <div className="repo"></div>
+        </div>
       </div>
     </div>
   );
