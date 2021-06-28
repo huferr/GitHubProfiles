@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './styles.css';
 import logoGitHub from '../../assets/logoGitHub.png'
-import { listUserInfo, listUserRepos } from "../../services/user.service";
 import { useParams } from "react-router-dom";
 
 import { APIRepo, APIUser } from '../../@types'
@@ -15,23 +14,9 @@ interface Data {
 const ProfileContainer = () => {
   const { username = 'huferr' } = useParams<{username?: string}>();
   const [data, setData] = useState<Data>();
-  /* const [userInfo, setUserInfo] = useState();
-  const [ reposInfo, setReposInfo] = useState(); */
+  
   
   useEffect(()=> {
-   
-    /* async function handleListUserInfo(username) {
-      let user = await listUserInfo(username)
-      setUserInfo(user)
-    }
-  
-    async function handleListUserRepos(username) {
-      let user = await listUserRepos(username)
-      setReposInfo(user)
-    }
-  
-    handleListUserInfo(username)
-    handleListUserRepos(username) */
   
     Promise.all([
       fetch(`https://api.github.com/users/${username}`),

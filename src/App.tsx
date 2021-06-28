@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header/>
-            <Route path='/' component={ProfileContainer}/>
+            <Route path='/' exact component={ProfileContainer}/>
             <Route path='/:username' component={ProfileContainer}/>
       </BrowserRouter>  
     </div>

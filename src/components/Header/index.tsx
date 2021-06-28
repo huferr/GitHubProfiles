@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './style.css'
 import logoGitHub from '../../assets/logoGitHub.png'
-import { listUserInfo } from '../../services/user.service'
 
 const Header = () => {
 
