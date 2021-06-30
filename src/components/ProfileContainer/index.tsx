@@ -1,8 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './styles.css';
-import logoGitHub from '../../assets/logoGitHub.png'
-import { useParams } from "react-router-dom";
-
+import {RiGroupLine, RiMapPin2Line, RiMailLine} from 'react-icons/ri'
 import { APIRepo, APIUser } from '../../@types'
 
 interface Data {
@@ -12,11 +10,8 @@ interface Data {
 }
 
 const ProfileContainer = () => {
-  const { username = 'huferr' } = useParams<{username?: string}>();
+  const username = localStorage.getItem('username')
   const [data, setData] = useState<Data>();
-  
-  
-  useEffect(()=> {
   
     Promise.all([
       fetch(`https://api.github.com/users/${username}`),
@@ -38,9 +33,7 @@ const ProfileContainer = () => {
       })
   
     })
-  
-  }, [username])
-  
+ 
   if (data?.error) {
     return <h1>{data.error}</h1>
   }
@@ -55,10 +48,22 @@ const ProfileContainer = () => {
       </div>
       <div className="profileContainer">
         <aside className="sideBar">
-          <img src={logoGitHub} alt="" className="userImage"/>
-          <h1 className="userName">{data.user.login}</h1>
-          <h3 className="userNickName">{data.user.name}</h3>
+          <img src={data.user.avatar_url} alt="" className="userImage"/>
+          <h1 className="userName">{data.user.name}</h1>
+          <h3 className="userNickName">{data.user.login}</h3>
           <p className="userDescription">{data.user.bio}</p>
+          <ul className='followers'>
+            <li>
+              <RiGroupLine className='followerIcon'/>
+              <b>{data.user.followers}</b>
+              <p>followers</p>
+              <span>·</span>
+            </li>
+            <li>
+              <b>{data.user.following}</b>
+              <p>following</p>
+            </li>
+          </ul>
           <p className="userLocation">{data.user.location}</p>
         </aside>
         <div className="reposContainer">

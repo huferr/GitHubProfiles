@@ -34,11 +34,48 @@
 
 .userImage {
     width: 280px;
-    margin-top: -30px;  
+    margin-top: -30px;
+    border-radius: 50%;
+    border: 2px solid #30363d;  
 }
 
 .userName {
     padding-top: 20px;
+}
+
+.userNickName {
+    font-weight: 100;
+    color: #8b949e;
+    padding-bottom: 20px;
+}
+
+.userDescription {
+    color: #c9d1d9;
+    padding-bottom: 20px;
+}
+
+.followers {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.followers li {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.followerIcon {
+    margin-right: 5px;
+    align-self: center;
+}
+
+.followers span {
+    padding: 0 5px 0 5px;
+}
+
+.followers p {
+    padding-left: 5px;
 }
 
 .reposContainer {

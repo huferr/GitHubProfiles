@@ -2,6 +2,7 @@ export interface APIUser {
     login: string;
     name: string;
     followers: number;
+    following: string;
     public_repos: number;
     avatar_url: string;
     email?: string;
