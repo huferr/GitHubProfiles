@@ -1,0 +1,90 @@
+.repoCard {
+    border-radius: 6px;
+    border: solid 1px #30363d;
+    background-color: transparent;
+    color: #c9d1d9;
+    padding: 16px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: #8b949e;
+    flex-shrink: 0;
+}
+
+.topSide header {
+    display: flex;
+    align-items: center;
+}
+
+.topSide header a {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #58a6ff ;
+    text-decoration: none;
+}
+
+.topSide header a:focus, header a:hover {
+    text-decoration: underline;
+}
+
+.topSide p {
+    margin: 8px 0 16px;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.botSide ul {
+    display: flex;
+    align-items: center;
+}
+
+.botSide li {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.botSide span {
+    margin-left: 5px;
+    font-size: 12px;
+    color:#8b949e;
+}
+
+.language {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.other {
+    background: #58a6ff ;
+
+}
+
+.javascript {
+    background: #f1e05a;
+}
+
+.typescript {
+    background: #2b7489;
+}
+
+.css {
+    background: #563d7c;
+}
+
+.html {
+    background: #e34c26;
+}
+
+.ruby {
+    background: #701516;
+}
+
+.elixir {
+    background: #6e4a7e;
+}

@@ -1,49 +1,49 @@
 .backgroundHeader {
-    width: 100%;
-    height: 60px;
-    background-color: #161b22;
-    display: flex;
-    align-items: center;
-    padding: 16px 32px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  background-color: #161b22;
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
 }
 
 .logoImg {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .searchInput {
-    background-color: #0d1117;
-    border: solid 1px #21262d;
-    width: 260px;
-    height: 30px;
-    border-radius: 6px;
-    color: #fff;
-    transition: width 0.2s ease-out;
-    padding-left: 10px;
-    margin-left: 16px;
+  background-color: #0d1117;
+  border: solid 1px #21262d;
+  width: 260px;
+  height: 30px;
+  border-radius: 6px;
+  color: #fff;
+  transition: width 0.2s ease-out;
+  padding-left: 10px;
+  margin-left: 16px;
 }
 
 .searchInput::placeholder {
-    color: #c2c3c5;
+  color: #c2c3c5;
 }
 
 .searchInput:focus {
-    width: 530px;
-    border: solid 1px #388bfd;
-    outline: none ;
+  width: 530px;
+  border: solid 1px #388bfd;
+  outline: none;
 }
 
 .navList {
-    display: flex;
-    list-style: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 14px;
-    padding-left: 16px;
+  display: flex;
+  list-style: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 16px;
 }
 
 .listItem {
-    padding-right: 20px;
+  padding-right: 20px;
 }

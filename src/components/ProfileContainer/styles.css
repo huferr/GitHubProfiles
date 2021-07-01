@@ -1,106 +1,105 @@
 .backgroundProfile {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 60px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 60px;
+  box-sizing: border-box;
 }
 
-.profileHeader{
-    width: 100%;
-    height: 75px;
-    border-bottom: solid 1px #21262d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #c9d1d9;  
+.profileHeader {
+  width: 100%;
+  height: 75px;
+  border-bottom: solid 1px #21262d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c9d1d9;
 }
-
 
 .profileContainer {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .sideBar {
-    width: 310px;
-    height: 100%;
-    padding-right: 30px;   
+  width: 310px;
+  height: 100%;
+  padding-right: 30px;
 }
 
 .userImage {
-    width: 280px;
-    margin-top: -30px;
-    border-radius: 50%;
-    border: 2px solid #30363d;  
+  width: 280px;
+  margin-top: -30px;
+  border-radius: 50%;
+  border: 2px solid #30363d;
 }
 
 .userName {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .userNickName {
-    font-weight: 100;
-    color: #8b949e;
-    padding-bottom: 20px;
+  font-weight: 100;
+  color: #8b949e;
+  padding-bottom: 20px;
 }
 
 .userDescription {
-    color: #c9d1d9;
-    padding-bottom: 20px;
+  color: #c9d1d9;
+  padding-bottom: 20px;
 }
 
 .followers {
-    list-style: none;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .followers li {
-    display: flex;
-    padding-bottom: 20px;
+  display: flex;
+  padding-bottom: 20px;
 }
 
 .followerIcon {
+  margin-right: 5px;
+  align-self: center;
+}
+
+.mapIcon {
     margin-right: 5px;
     align-self: center;
 }
 
+.locationContainer {
+    display: flex;
+}
+
 .followers span {
-    padding: 0 5px 0 5px;
+  padding: 0 5px 0 5px;
 }
 
 .followers p {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .reposContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .repoContainerTitle {
-    padding: 20px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 .repos {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.repoCard {
-    width: 400px;
-    height: 80px;
-    border-radius: 5px;
-    border: solid 1px #30363d;
-    background-color: transparent;
-    color: #c9d1d9;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr;
 }
