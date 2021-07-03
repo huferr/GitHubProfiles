@@ -1,8 +1,13 @@
 # GitHubProfiles
 
-Project made to practice API consuming, in this case, using the gGitHub API.
+Project made with ReactJS to practice API consuming using GitHub API, in order to show in a simple way user's profile and repositories.
 
-### Concepts used in this project:
+### Concepts/tools used in this project
 
+- Fetch API;
+- LocalStorage;
+- Typescript;
+
+### Images
 
 
