@@ -29,10 +29,11 @@ const ProfileContainer = () => {
     const user = await userResponse.json();
     const repos = await reposResponse.json();
 
-    const slicedRepos = repos.slice(0, 6);
+    const SlicedRepos = repos.slice(0,6)
+
     setData({
       user,
-      repos: slicedRepos,
+      repos: SlicedRepos,
     });
   });
 

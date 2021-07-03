@@ -24,7 +24,7 @@ const RepoCard = (props: Props) => {
           <RiBookMarkLine className="icon" />
           <a
             href={`https://github.com/${props.username}/${props.reponame}`}
-            target="_blank"
+            target="_blank" 
           >
             {props.reponame}
           </a>
