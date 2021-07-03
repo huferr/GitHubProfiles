@@ -10,4 +10,5 @@ Project made with ReactJS to practice API consuming using GitHub API, in order t
 
 ### Images
 
+![project](https://github.com/huferr/GitHubProfiles/blob/main/images/githubprofiles.png)
 
